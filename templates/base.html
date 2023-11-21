@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>
+      ::: Belmont Apartments :::
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel = "icon" href = "https://cdn.discordapp.com/attachments/1012857159421263942/1176291042933354557/gr0wlitttbeats_a_blue_logo_for_belmont_apartments_44664887-0fc3-4204-be8c-bc7d21e5ffd2.png?ex=656e5567&is=655be067&hm=0c3fb2df507d08ab6292354452d1c009ec9b8c928291dada94e234c3619ba215&" type = "image/x-icon" class="justify-content-center">
+    <style>
+    </style>
+    {% block head %}{% endblock %}
+  </head>
+  <body style="font-family: 'Poppins', sans-serif;">
+    <div class="text-bg-light p-3 brand-text">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #185c81;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src=https://cdn.discordapp.com/attachments/1012857159421263942/1176291042933354557/gr0wlitttbeats_a_blue_logo_for_belmont_apartments_44664887-0fc3-4204-be8c-bc7d21e5ffd2.png?ex=656e5567&is=655be067&hm=0c3fb2df507d08ab6292354452d1c009ec9b8c928291dada94e234c3619ba215&width=1306&height=1306" alt="Logo" width="40" height="38"> 
+            Belmont Apartments
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="navbar-brand">
+                <a class="nav-link" href="/rental_rates">Rental Rates</a>
+              </li>
+              <li class="navbar-brand">
+                <a class="nav-link" href="/pictures">View Pictures</a>
+              </li>
+              <li class="navbar-brand">
+                <a class="nav-link" href="/amenities">Amenities</a>
+              </li>
+              <li class="navbar-brand">
+                <a class="nav-link" href="/calendar">Calendar</a>
+              </li>
+              <li class="navbar-brand">
+                <a class="nav-link" href="/contact_info">Contact Us</a>
+              </li>
+              <li class="navbar-brand">
+                <a class="nav-link" href="/openings">Openings</a>
+              </li>
+              <li class="navbar-brand">
+                <a class="nav-link" href="/forms">Forms & Contracts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </div>
+<div class="text-bg-light p-3">
+    {% for msg in get_flashed_messages() %}
+      <p class="flash-msg text-center">
+        {{ msg }}
+      </p>
+    {% endfor %}
+    {% block body %}{% endblock %}
+    {% block after_body %}{% endblock %}
+</div>
+<footer>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid pokemonAnimeText">
+      <div class="footer-navbar">
+        <div>
+            CWB - Design & Production by Clarke Anderson - 2023 ©
+          <a class="nav-link" href="https://github.com/clarkeand" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="40" height="38" alt="GitHub">
+          </a>
+          <a class="nav-link" href="https://www.linkedin.com/in/clarkeand/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" width="40" height="38" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</footer>
+</body>
+</html>
