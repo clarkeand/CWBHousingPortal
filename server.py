@@ -42,8 +42,18 @@ def openings():
 
 @app.route('/forms')
 def forms():
-    """View forms/contracts."""
+    """View forms."""
     return render_template('forms.html')
+
+@app.route('/sp_sm_contracts')
+def sp_sm_contracts():
+    """View spring summer forms/contracts."""
+    return render_template('sp_sm_contracts.html')
+
+@app.route('/fl_w_contracts')
+def fl_w_contracts():
+    """View fall and winter forms/contracts."""
+    return render_template('fl_w_contracts.html')
 
 if __name__ == "__main__": 
     app.run(debug=True, port=3000)
