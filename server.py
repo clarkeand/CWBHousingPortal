@@ -1,7 +1,6 @@
 """Server for the CWB Housing Portal"""
 
 from flask import (Flask, render_template, request, flash, session,redirect,)
-from passlib.hash import argon2
 
 app = Flask(__name__, static_folder='static')
 
@@ -56,4 +55,4 @@ def fl_w_contracts():
     return render_template('fl_w_contracts.html')
 
 if __name__ == "__main__": 
-    app.run(debug=True, port=3000)
+    app.run()
